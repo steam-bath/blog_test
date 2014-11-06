@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{# ======== #}
+        
+{% block breadcrumbs %}
+    {{ block.super }}
+    {% breadcrumb "Статьи" "blog:posts" %}
+{% endblock %}
+        
+{% block title %}404{% endblock %}        
+        
+{% block content %}
+    <h1>404 Страница не существует !</h1>        
+{% endblock %}

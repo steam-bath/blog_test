@@ -1,0 +1,45 @@
+{% extends "blog_base.html" %}
+{% load cropping %}
+{% load staticfiles %}
+{% load django_bootstrap_breadcrumbs %}
+{# ======== #}
+
+{% block title %}{{ tag.title }}{% endblock %}
+{% block h1 %}{{ tag.title }}{% endblock %}
+
+{% block breadcrumbs %}
+    {{ block.super }}
+    {% breadcrumb "Теги" "blog:tag_list" %}
+    {% breadcrumb tag.title "blog:tag_detail" tag.title %}
+{% endblock %}
+
+{% block blog_content %}
+    <div class="page_content">
+        <div class="postslist">
+            <ul>
+                <li>
+                    <p>Статьи тега:</p>
+                    {% if posts %}
+                        {% for post in posts %}
+                            <a href="{% url 'blog:post_detail' post.pk %}">{{ post.title }}</a><br/>
+                        {% endfor %}
+                        {% if pages|length > 1 %}
+                            <div class="navigation">
+                                {% for page in pages %}
+                                    {% if page == active_page %}
+                                        <span>{{ page }}</span>&nbsp;&nbsp;
+                                    {% else %}
+                                        <a href="{% url 'blog:tag_detail_pagination' tag.title page %}">{{ page }}</a>&nbsp;&nbsp;
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    {% else %}
+                        <p>К сожалению, у данного тега нет статей</p>
+                    {% endif %}
+                </li>
+            </ul>
+        </div>
+        <a href="{% url 'blog:tag_list' %}">Назад к списку тегов</a>
+    </div>
+{% endblock %}

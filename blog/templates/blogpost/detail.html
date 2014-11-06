@@ -1,0 +1,93 @@
+{% extends "blog_base.html" %}
+{% load cropping %}
+{% load staticfiles %}
+{% load django_bootstrap_breadcrumbs %}
+{# ======== #}
+
+{% block title %}{{ post.title }}{% endblock %}
+{% block h1 %}{{ post.title }}{% endblock %}
+
+{% block breadcrumbs %}
+    {{ block.super }}
+    {% breadcrumb post.title "blog:post_detail" post.pk %}
+{% endblock %}
+
+{% block seo_keywords %}
+    {% if post.seo_keywords %}
+        {{ post.seo_keywords }}
+    {% else %}
+        {{ block.super }}
+    {% endif %}
+{% endblock %}
+
+{% block seo_description %}
+    {% if post.seo_description %}
+        {{ post.seo_description }}
+    {% else %}
+        {{ block.super }}
+    {% endif %}
+{% endblock %}
+
+{% block blog_content %}
+    <div class="page_content">
+        <div class="postslist">
+            <ul>
+                <li>
+                    <p class="date">{{ post.create_date|date:"d.m.Y" }} в {{ post.create_date|time:"H:i" }}</p>
+                    {% if post.image %}
+                        <a target="_blank" href="{{ post.image.url }}"><img src="{% cropped_thumbnail post 'preview_image' scale=0.9 %} "/></a>
+                    {% endif %}
+                    <article>{{ post.detail|safe }}</article>
+                    {% if post.tags.all %}
+                        <p class="post_tags">
+                            Теги:&nbsp;
+                            {% for tag in post.tags.all %}
+                                <a href="{% url 'blog:tag_detail' tag.title %}">{{ tag.title }}</a>&nbsp;
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                </li>
+            </ul>
+        </div>
+        <a href="{% url 'blog:post_list' %}">Назад к списку статей</a>
+
+        {# Комментарии статьи #}
+        {% if comments %}
+            <h3 align="right">Комментарии статьи:</h3>
+            {% for comment in comments %}
+                <div class="comment" align="right">
+                    <ul>
+                        <li>
+                            <b>{{ comment.name }}</b> пишет:
+                            <br/><br/>
+                            <i>{{ comment.text }}</i>
+                        </li>
+                    </ul>
+                </div>
+            {% endfor %}
+        {% endif %}
+
+    </div>
+
+    {# форма добавления комментария #}
+    <br/><hr/>
+    <div class="comment_form">
+        <p>Вы можете оставить свой комментарий:</p>
+        <form name="comment_form" method="post">
+            {% csrf_token %}
+            {% for field in form %}
+                <div>
+                    {% if field.errors %}
+                        {% for error in field.errors %}
+                            <span class="form_error">{{ error }}</span>
+                        {% endfor %}
+                        <span class="form_error"> * </span>
+                    {% endif %}
+                    {{ field.label_tag }} {{ field }}
+                </div>
+            {% endfor %}
+            <br/>
+            <input type="submit" name="submit" value="Отправить" />
+        </form>
+    </div>
+{% endblock %}

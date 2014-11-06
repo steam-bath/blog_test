@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load cropping %}
+{% load django_bootstrap_breadcrumbs %}
+{# ======== #}
+
+{% block breadcrumbs %}
+    {{ block.super }}
+    {% breadcrumb "Статьи" "blog:post_list" %}
+{% endblock %}
+
+{% block content %}
+    <h1>{% block h1 %}Список статей блога{% endblock %}</h1>
+
+    {% block tags %}
+        {% if tags %}
+            <div class="tags">
+                Теги:&nbsp;
+                {% for tag in tags %}
+                    <a href="{% url 'blog:tag_detail' tag.title %}">{{ tag.title }}</a>&nbsp;
+                    {% if forloop.last %}
+                        {% if forloop.counter == 10 %}
+                            <a href="{% url 'blog:tag_list' %}" alt="просмотреть все теги">...</a>
+                        {% endif %}
+                        <hr/>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endblock %}
+
+    {% block blog_content %}{% endblock %}
+
+{% endblock %}

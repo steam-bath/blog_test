@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{# ======== #}
+
+{% block breadcrumbs %}
+    {{ block.super }}
+    {% breadcrumb "Статьи" "blog:posts" %}
+{% endblock %}
+
+{% block title %}500{% endblock %}
+
+{% block content %}
+    <h1>Внуренняя ошибка сервера !</h1>
+{% endblock %}

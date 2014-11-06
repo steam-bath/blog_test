@@ -1,0 +1,55 @@
+{% extends "blog_base.html" %}
+{% load cropping %}
+{% load django_bootstrap_breadcrumbs %}
+{# ======== #}
+
+{% block breadcrumbs %}
+{% endblock %}
+
+{% block blog_content %}
+    <div class="page_content">
+        <div class="postslist">
+        <ul>
+            {% for post in posts %}
+                <li>
+                    <p class="date">{{ post.create_date|date:"d.m.Y" }} в {{ post.create_date|time:"H:i" }}</p>
+                    <h4><a href="{% url 'blog:post_detail' post.pk %}">{{ post.title }}</a></h4>
+                    {% if post.image %}
+                        <img src="{% cropped_thumbnail post 'preview_image' scale=0.9 %} "/>
+                    {% endif %}
+                    <article>
+                        {% if post.announce %}
+                            {{ post.announce|safe }}
+                        {% else %}
+                            {{ post.detail|safe|truncatechars:500 }}
+                        {% endif %}
+                    </article>
+                    {% if post.tags.all %}
+                        <p class="post_tags">
+                            Теги:&nbsp;
+                            {% for tag in post.tags.all %}
+                                <a href="{% url 'blog:tag_detail' tag.title %}">{{ tag.title }}</a>&nbsp;
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                </li>
+            {% empty %}
+                <li>
+                    <p>К сожалению, ни одной статьи ещё не добавлено.</p>
+                </li>
+            {% endfor %}
+        </ul>
+            {% if pages|length > 1 %}
+                <div class="navigation">
+                    {% for page in pages %}
+                        {% if page == active_page %}
+                            <span>{{ page }}</span>&nbsp;&nbsp;
+                        {% else %}
+                            <a href="{% url 'blog:post_pagination' page %}">{{ page }}</a>&nbsp;&nbsp;
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+
+        {% load django_bootstrap_breadcrumbs %}
+        {% load static %}
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+        <title>{% block title %}Test App: Blog test unit{% endblock %}</title>
+
+        <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css"/>
+
+        <meta name="keywords" content="{% block seo_keywords %}{% endblock %}"/>
+        <meta name="description" content="{% block seo_description %}{% endblock %}"/>
+    </head>
+
+    <body>
+
+        <div class="header">
+            <header>
+                <p><b>Test App: Blog test unit</b></p>
+            </header>
+        </div>
+
+        <div class="body">
+
+            <div class="breadcrumbs">
+                {% block breadcrumbs %}
+                    {% clear_breadcrumbs %}
+                {% endblock %}
+                {% render_breadcrumbs "breadcrumbs.html" %}
+            </div>
+            <br/>
+
+            {% block content %}{% endblock %}
+        </div>
+
+    </body>
+
+</html>

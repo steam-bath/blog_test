@@ -1,0 +1,252 @@
+[
+{
+    "pk": 1, 
+    "model": "blog.blogtag", 
+    "fields": {
+        "create_date": "2014-11-03T15:13:38Z", 
+        "is_active": true, 
+        "title": "\u041d\u043e\u0432\u043e\u0441\u0442\u0438"
+    }
+},
+{
+    "pk": 2, 
+    "model": "blog.blogtag", 
+    "fields": {
+        "create_date": "2014-11-03T15:13:38Z", 
+        "is_active": true, 
+        "title": "\u041a\u0443\u043b\u0438\u043d\u0430\u0440\u0438\u044f"
+    }
+},
+{
+    "pk": 3, 
+    "model": "blog.blogtag", 
+    "fields": {
+        "create_date": "2014-11-03T15:13:38Z", 
+        "is_active": true, 
+        "title": "\u0418\u0437 \u043c\u0438\u0440\u0430 \u0436\u0438\u0432\u043e\u0442\u043d\u044b\u0445"
+    }
+},
+{
+    "pk": 4, 
+    "model": "blog.blogtag", 
+    "fields": {
+        "create_date": "2014-11-03T15:13:38Z", 
+        "is_active": true, 
+        "title": "\u041f\u043e\u043b\u0438\u0442\u0438\u043a\u0430"
+    }
+},
+{
+    "pk": 5, 
+    "model": "blog.blogtag", 
+    "fields": {
+        "create_date": "2014-11-03T15:13:38Z", 
+        "is_active": true, 
+        "title": "\u0410\u0437\u0430\u0440\u0442"
+    }
+},
+{
+    "pk": 6, 
+    "model": "blog.blogtag", 
+    "fields": {
+        "create_date": "2014-11-03T15:13:38Z", 
+        "is_active": true, 
+        "title": "\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442"
+    }
+},
+{
+    "pk": 7, 
+    "model": "blog.blogtag", 
+    "fields": {
+        "create_date": "2014-11-03T15:56:07Z", 
+        "is_active": true, 
+        "title": "\u0416\u0438\u0432\u043e\u0442\u043d\u044b\u0435"
+    }
+},
+{
+    "pk": 8, 
+    "model": "blog.blogtag", 
+    "fields": {
+        "create_date": "2014-11-03T15:56:07Z", 
+        "is_active": true, 
+        "title": "\u0421\u0435\u0440\u0432\u0438\u0440\u043e\u0432\u043a\u0430"
+    }
+},
+{
+    "pk": 9, 
+    "model": "blog.blogtag", 
+    "fields": {
+        "create_date": "2014-11-04T18:44:47Z", 
+        "is_active": true, 
+        "title": "Wiki"
+    }
+},
+{
+    "pk": 10, 
+    "model": "blog.blogtag", 
+    "fields": {
+        "create_date": "2014-11-04T18:44:47Z", 
+        "is_active": true, 
+        "title": "\u041e\u0434\u0435\u0436\u0434\u0430"
+    }
+},
+{
+    "pk": 11, 
+    "model": "blog.blogtag", 
+    "fields": {
+        "create_date": "2014-11-04T18:44:47Z", 
+        "is_active": true, 
+        "title": "\u0411\u043e\u043b\u0435\u0437\u043d\u0438"
+    }
+},
+{
+    "pk": 12, 
+    "model": "blog.blogtag", 
+    "fields": {
+        "create_date": "2014-11-04T18:44:47Z", 
+        "is_active": true, 
+        "title": "\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u0438\u043a\u0430"
+    }
+},
+{
+    "pk": 1, 
+    "model": "blog.blogpost", 
+    "fields": {
+        "create_date": "2014-11-02T21:38:05Z", 
+        "title": "Lorem ipsum dolor sit amet", 
+        "image": "blogpost/images/nordic-landscape-nature-photography-iceland-2.jpg", 
+        "seo_description": "test test test", 
+        "is_active": true, 
+        "detail": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium justo id tincidunt feugiat. Integer sit amet quam et ex pellentesque blandit. Ut id bibendum odio. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque at facilisis justo. Praesent condimentum, sem et congue convallis, nisi tellus gravida ante, et congue tortor turpis quis tellus. Nunc quis gravida mi, at aliquam risus. Integer eget hendrerit justo, ac pulvinar nisl. Sed vitae felis eget risus gravida egestas. Ut convallis, nibh quis ultrices aliquam, ante ex iaculis est, vitae posuere velit dui semper ligula. Nam et sapien in orci sollicitudin auctor. Fusce congue orci in facilisis varius. Praesent pulvinar maximus neque sit amet scelerisque. Curabitur commodo ultricies mi. Phasellus ut ex ut lectus tincidunt ornare.</p>\r\n<p>Cras nisl massa, iaculis vehicula pulvinar vitae, sollicitudin vel mi. Nunc elementum libero ut metus pretium consectetur. Etiam mollis, velit vitae blandit laoreet, ante sapien dapibus libero, quis convallis augue justo vel enim. Morbi luctus tellus mi, sed placerat eros tempor a. Quisque ut dolor vitae est hendrerit luctus. In hac habitasse platea dictumst. Donec et dolor pharetra, vulputate est ac, viverra nisl. Aenean non semper ante. Vestibulum maximus diam vel auctor blandit. Suspendisse facilisis dui in est euismod porttitor. Sed hendrerit orci quis iaculis pretium. Donec finibus dui ut aliquet pulvinar. Etiam posuere commodo odio, eu suscipit libero euismod nec.</p>\r\n<p>Nullam vitae molestie sem. Vivamus id risus in metus fermentum iaculis id eu metus. Praesent diam nunc, consectetur ac lacus ut, varius sollicitudin augue. Proin nec rhoncus tellus. Nunc ac metus sed elit cursus consectetur. Nullam egestas fringilla fringilla. Sed magna mi, venenatis id fringilla nec, condimentum id augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse eget eleifend ipsum. Ut eget egestas justo. Nulla blandit congue orci, eget elementum lorem congue vitae. Nullam elit est, rhoncus ut nisi sed, cursus pulvinar sem. Aliquam nec erat sed lectus maximus iaculis. Fusce pretium ipsum ligula, ac efficitur metus venenatis sed.</p>\r\n<p>Phasellus vulputate orci quis massa facilisis sodales. In viverra lectus ut velit blandit auctor. Vestibulum varius tincidunt eros a euismod. Nullam elementum quis arcu vel dignissim. Curabitur vehicula porta ex, eu mattis lorem pulvinar nec. Aliquam tristique sed risus semper pellentesque. Donec posuere id nisl ac aliquam. Cras dolor ligula, vehicula blandit sagittis et, efficitur dignissim neque. In vestibulum varius mi, ac sollicitudin sem dignissim et. Nulla sagittis tempor augue eleifend tristique. Cras vestibulum diam sed fringilla vulputate. Nulla accumsan lectus at tempus convallis. Nulla lobortis sit amet tortor eu lobortis.</p>\r\n<p>Praesent ut purus et urna ultricies sagittis. Fusce porttitor, augue in sagittis facilisis, lacus metus eleifend nisi, consectetur elementum mi ipsum tincidunt nulla. Nullam sed dolor aliquet, venenatis dui sit amet, fermentum quam. Nunc justo nisl, tincidunt sed orci vitae, scelerisque viverra turpis. Cras dictum metus ac semper pellentesque. Donec accumsan, lorem at porta laoreet, orci dui viverra ante, facilisis sollicitudin nunc sapien id ipsum. Donec non ultricies lacus. Phasellus lacinia luctus orci, nec congue mauris hendrerit et.</p>", 
+        "seo_keywords": "test", 
+        "announce": "<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium justo id tincidunt feugiat. Integer sit amet quam et ex pellentesque blandit. Ut id bibendum odio. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque at facilisis justo. Praesent condimentum, sem et congue convallis, nisi tellus gravida ante, et congue tortor turpis quis tellus. Nunc quis gravida mi, at aliquam risus. Integer eget hendrerit justo, ac pulvinar nisl. Sed vitae felis eget risus gravida egestas. Ut convallis, nibh quis ultrices aliquam, ante ex iaculis est, vitae posuere velit dui semper ligula. Nam et sapien in orci sollicitudin auctor. Fusce congue orci in facilisis varius. Praesent pulvinar maximus neque sit amet scelerisque. Curabitur commodo ultricies mi. Phasellus ut ex ut lectus tincidunt ornare.</span></p>", 
+        "tags": [
+            8, 
+            7, 
+            4, 
+            2, 
+            1
+        ], 
+        "preview_image": ""
+    }
+},
+{
+    "pk": 2, 
+    "model": "blog.blogpost", 
+    "fields": {
+        "create_date": "2014-11-03T14:05:41Z", 
+        "title": "Neque porro quisquam est qui dolorem", 
+        "image": "", 
+        "seo_description": "", 
+        "is_active": true, 
+        "detail": "<p>Etiam bibendum est eget pellentesque luctus. Nulla sagittis quam at eros elementum mattis. Nam facilisis sem et felis elementum, vitae tincidunt turpis convallis. Donec dapibus quam non vulputate accumsan. Donec et feugiat est, at porta tortor. Nunc varius tortor id lobortis aliquam. Aenean at porttitor risus. Praesent gravida urna porttitor quam mattis tempus. Sed facilisis, nisl id tempus ullamcorper, lorem lorem interdum mi, eget malesuada massa libero non odio. Nam dictum turpis sit amet libero mollis vehicula. Nunc a hendrerit sapien. In condimentum, neque quis imperdiet aliquet, lorem quam ultricies justo, vel imperdiet neque ligula vitae nisl.</p>\r\n<p>Suspendisse dignissim imperdiet nibh, nec tincidunt orci elementum non. Nunc tempus fermentum nulla vel hendrerit. Fusce lectus nisl, accumsan id rutrum quis, pharetra sit amet purus. Sed suscipit non lacus ac porttitor. Sed vel sodales erat. Mauris lectus libero, finibus vel urna nec, varius convallis ante. Aenean luctus orci at sem consequat, id semper libero accumsan. Suspendisse tincidunt quis enim nec dapibus. Mauris ultricies risus id nulla dictum dignissim. Etiam ut maximus tortor. Mauris at mauris non nulla scelerisque interdum. In tincidunt condimentum lacus vel condimentum. Fusce eros lorem, fermentum at dolor blandit, blandit gravida ligula.</p>\r\n<p>Suspendisse potenti. Praesent mauris dui, finibus vel nisi eget, mollis sollicitudin mi. Sed arcu lectus, blandit sit amet lacus et, fringilla finibus risus. Pellentesque vulputate nibh ut arcu consectetur hendrerit. Aliquam felis dui, dictum ac purus et, varius fringilla augue. Fusce dictum justo a risus tincidunt, at porta quam vehicula. Integer eros dui, pellentesque id consequat nec, interdum eu risus. Nunc eu varius nisi. Aliquam eget sodales tellus. Vestibulum ultricies at velit elementum congue.</p>\r\n<p>Duis blandit felis quis sapien efficitur laoreet. Nam et elementum metus. Vestibulum pretium nunc id lectus congue blandit. Sed nunc leo, vestibulum et diam sit amet, iaculis viverra nunc. Fusce venenatis a mi tristique tristique. Nam vel arcu volutpat, consequat massa ornare, suscipit dolor. Etiam vehicula sed lorem ac porta. Nam tristique, diam vel posuere auctor, elit ex mattis urna, in dignissim leo nibh ac est. Sed vel nisl sit amet ante ullamcorper sollicitudin. Praesent cursus in odio eu molestie. Sed justo magna, feugiat ac est et, fermentum tincidunt tellus.</p>\r\n<p>Nam ac quam tempus, rutrum tellus accumsan, pellentesque mi. Morbi consequat vehicula erat a gravida. Nunc ornare odio libero, at cursus libero tincidunt id. Duis id pharetra mi. Vivamus molestie, velit vel mollis posuere, neque ex malesuada libero, ac ultricies mauris mi in justo. Suspendisse dapibus dui sed nunc dapibus lobortis. Proin ac placerat nunc.</p>", 
+        "seo_keywords": "", 
+        "announce": "<p><span><strong><em>Etiam bibendum est eget pellentesque luctus</em></strong>. Nulla sagittis quam at eros elementum mattis. Nam facilisis sem et felis elementum, vitae tincidunt turpis convallis. Donec dapibus quam non vulputate accumsan. Donec et feugiat est, at porta tortor. Nunc varius tortor id lobortis aliquam. Aenean at porttitor risus. Praesent gravida urna porttitor quam mattis tempus. Sed facilisis, nisl id tempus ullamcorper, lorem lorem interdum mi, eget malesuada massa libero non odio. Nam dictum turpis sit amet libero mollis vehicula. Nunc a hendrerit sapien. In condimentum, neque quis imperdiet aliquet, lorem quam ultricies justo, vel imperdiet neque ligula vitae nisl.</span></p>", 
+        "tags": [
+            8, 
+            5, 
+            3
+        ], 
+        "preview_image": ""
+    }
+},
+{
+    "pk": 3, 
+    "model": "blog.blogpost", 
+    "fields": {
+        "create_date": "2014-11-04T18:44:47Z", 
+        "title": "Cras porta scelerisque dolor, consequat eleifend purus bibendum vitae", 
+        "image": "blogpost/images/nature-animals-wallpaper-2.jpg", 
+        "seo_description": "", 
+        "is_active": true, 
+        "detail": "<p>Cras porta scelerisque dolor, consequat eleifend purus bibendum vitae. Nunc id quam sit amet orci maximus ultricies. Vivamus interdum nibh quis vulputate accumsan. Maecenas sit amet risus consectetur ipsum viverra tempor et nec augue. Nullam non arcu auctor, dictum dolor non, aliquet metus. Phasellus sollicitudin molestie nulla, eget consectetur nunc imperdiet et. Proin ac mi eget ligula porttitor semper. Fusce dignissim elit sed quam tincidunt, eu facilisis erat porttitor. Sed luctus facilisis odio quis finibus. Nunc venenatis magna ante, ut posuere enim commodo a. Nunc congue justo quis lacinia lobortis. Nunc accumsan pharetra dapibus. Vivamus sagittis lectus mauris. Donec tristique neque ipsum, in varius nulla scelerisque eu.</p>\r\n<p>Duis ut pretium dui, in maximus ligula. Aenean dictum suscipit nunc sed cursus. Integer feugiat lacus auctor mattis mattis. Nulla risus risus, elementum id volutpat vitae, tristique sed urna. Donec ac ultricies sapien, non mattis ante. Donec eu ipsum a tortor porttitor egestas in ac elit. Maecenas sed mi mi. Quisque ac purus id turpis vehicula iaculis at sit amet tellus. Etiam dictum varius nibh nec convallis.</p>\r\n<p>Cras rhoncus vulputate malesuada. Aenean libero ante, auctor in erat at, ornare sollicitudin mi. Ut posuere dapibus ex, et pellentesque nisi posuere ut. Etiam ullamcorper, elit eget vulputate accumsan, augue mi pulvinar neque, eget commodo nisi lacus eu erat. Ut vehicula blandit nibh ac bibendum. Integer ornare elit eu tellus malesuada vestibulum. Praesent eu consequat augue. Sed vestibulum mollis sem, nec pellentesque risus rhoncus ut. Nam consequat leo sed lectus auctor, sit amet tincidunt nisi ultrices.</p>\r\n<p>Praesent pretium, nulla sit amet luctus convallis, dolor lorem faucibus dolor, eu aliquet tortor nunc at lorem. Sed tincidunt ullamcorper mi, non consequat nunc scelerisque eu. Proin quis metus in sem vestibulum blandit. Pellentesque pharetra eu nisl non volutpat. Nunc rhoncus condimentum gravida. Curabitur feugiat tortor quam, sit amet tincidunt velit tempus finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam porttitor elit dolor, ac tempus enim dapibus ut. Fusce condimentum mollis mauris, nec imperdiet ante iaculis non. Phasellus sit amet aliquet purus. Phasellus congue blandit nibh sed dignissim. Etiam venenatis eu magna in vehicula. Praesent sed ipsum augue. Sed nunc justo, auctor ac cursus id, dignissim at mauris.</p>\r\n<p>Donec gravida dictum diam, a vulputate quam blandit in. Quisque auctor ex leo, in vestibulum velit semper in. Cras porta eleifend turpis, eu fringilla nunc rutrum ut. Suspendisse convallis vitae ipsum sed fermentum. Curabitur at quam ut nisi efficitur consequat eu ac neque. Nulla vestibulum erat nulla, vitae placerat purus cursus in. Nunc volutpat, sem at convallis congue, massa nisi ultrices velit, eget commodo lectus nisi at nulla. Etiam tempus convallis ante eget accumsan. Fusce feugiat accumsan aliquet. Praesent ultricies elit libero, in iaculis purus egestas eu.</p>", 
+        "seo_keywords": "", 
+        "announce": "", 
+        "tags": [
+            8, 
+            7, 
+            4
+        ], 
+        "preview_image": "429,37,659,266"
+    }
+},
+{
+    "pk": 4, 
+    "model": "blog.blogpost", 
+    "fields": {
+        "create_date": "2014-11-04T23:57:21Z", 
+        "title": "Aliquam ultricies erat in cursus tristique", 
+        "image": "blogpost/images/deer-nature.jpg", 
+        "seo_description": "", 
+        "is_active": true, 
+        "detail": "<p><strong>Aliquam ultricies erat in cursus tristique.</strong> Ut ac magna in libero euismod bibendum quis sed felis. Vestibulum augue diam, varius non lectus in, fermentum malesuada odio. <span style=\"text-decoration: underline;\">Phasellus eu est ac diam dignissim porttitor vitae sed nibh</span>. Aenean elit mi, interdum at posuere non, porttitor quis elit. Aliquam est magna, aliquet vitae rutrum vitae, auctor id nunc. Curabitur interdum nec nisl eu luctus. Ut condimentum eros vel porta dictum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris suscipit elit quis orci scelerisque tristique. Donec tincidunt nulla eget accumsan aliquam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sed sem pellentesque, gravida lectus vitae, vehicula lectus. Sed a tempus arcu, et tempor lacus.</p>\r\n<p>Aliquam vulputate sagittis ex nec pretium. Quisque a nisl facilisis, hendrerit massa volutpat, vehicula metus. Fusce bibendum placerat orci, ac viverra leo ornare eget. Praesent porttitor nulla ac velit gravida ultrices. Fusce non mi blandit, ornare est sed, malesuada lectus. Donec sit amet placerat nisi. Etiam suscipit laoreet sem at commodo. Etiam at suscipit purus.</p>\r\n<p>Nulla aliquam lobortis nulla, eget vehicula tellus cursus vitae. Praesent venenatis blandit risus eu mollis. Phasellus nec sapien ac mi ullamcorper porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec vitae libero vestibulum, vulputate nibh quis, pharetra ipsum. Vivamus finibus porttitor purus, id commodo lectus luctus quis. Integer sit amet sollicitudin sem. Vestibulum sit amet blandit dolor, nec malesuada turpis. Quisque ut hendrerit justo, a pretium leo. Aliquam eleifend feugiat leo. Sed eget volutpat ligula.</p>\r\n<p>Nunc non risus quis ex mattis suscipit a et est. Quisque ligula lorem, fringilla quis molestie at, sodales a magna. Quisque auctor sit amet ipsum quis pulvinar. Curabitur a diam sagittis, posuere lacus non, vulputate nibh. Etiam scelerisque at tellus ac pretium. Phasellus efficitur, purus vel semper aliquet, mi risus venenatis tellus, vel placerat justo justo bibendum mi. Suspendisse augue est, luctus eget urna id, semper venenatis justo. Sed eu consectetur tortor, sed pharetra sem. Aenean vehicula nisl ut metus pellentesque tincidunt. Mauris sapien risus, iaculis ut ligula sit amet, commodo rutrum nisl. Cras rhoncus mi vitae turpis congue aliquam. Mauris a lorem nunc.</p>\r\n<p>Sed dui orci, sagittis non magna vitae, ultricies tristique erat. Mauris mattis sapien vehicula, aliquam dui eu, dapibus ipsum. Sed fermentum consequat elit, in placerat sapien vulputate nec. Proin accumsan nisl id sem pellentesque commodo. Vivamus dictum nibh vel elit semper, convallis elementum nunc tincidunt. Sed mi lorem, dictum quis purus eu, iaculis porta turpis. Nunc lacinia massa sed elit hendrerit, et fermentum tellus sagittis. Sed a maximus massa. Mauris a pretium erat. Praesent non eleifend turpis. Nunc accumsan, odio fringilla aliquet sagittis, lacus nisi faucibus risus, eu interdum magna ligula a nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec in iaculis ipsum, ac elementum nunc.</p>", 
+        "seo_keywords": "", 
+        "announce": "", 
+        "tags": [
+            8, 
+            7, 
+            6, 
+            5, 
+            4, 
+            3, 
+            2, 
+            1
+        ], 
+        "preview_image": "777,196,1715,1132"
+    }
+},
+{
+    "pk": 1, 
+    "model": "blog.blogcomment", 
+    "fields": {
+        "text": "Test comment", 
+        "post": 4, 
+        "is_active": true, 
+        "name": "Klim", 
+        "create_date": "2014-11-05T22:40:17Z"
+    }
+},
+{
+    "pk": 2, 
+    "model": "blog.blogcomment", 
+    "fields": {
+        "text": "Praesent venenatis blandit risus eu mollis. Phasellus nec sapien ac mi ullamcorper porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus", 
+        "post": 4, 
+        "is_active": true, 
+        "name": "Vasya", 
+        "create_date": "2014-11-05T22:40:17Z"
+    }
+},
+{
+    "pk": 3, 
+    "model": "blog.blogcomment", 
+    "fields": {
+        "text": "Nam ac quam tempus, rutrum tellus accumsan, pellentesque mi. Morbi consequat vehicula erat a gravida. Nunc ornare odio libero, at cursus libero tincidunt id. Duis id pharetra mi", 
+        "post": 2, 
+        "is_active": true, 
+        "name": "Test_author", 
+        "create_date": "2014-11-05T22:40:17Z"
+    }
+},
+{
+    "pk": 4, 
+    "model": "blog.blogcomment", 
+    "fields": {
+        "text": "some interesting text...", 
+        "post": 2, 
+        "is_active": true, 
+        "name": "test", 
+        "create_date": "2014-11-06T01:27:42Z"
+    }
+},
+{
+    "pk": 5, 
+    "model": "blog.blogcomment", 
+    "fields": {
+        "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec in iaculis ipsum, ac elementum nunc.", 
+        "post": 4, 
+        "is_active": true, 
+        "name": "Suturus", 
+        "create_date": "2014-11-06T06:50:39Z"
+    }
+}
+]

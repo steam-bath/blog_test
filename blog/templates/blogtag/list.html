@@ -1,0 +1,44 @@
+{% extends "blog_base.html" %}
+{% load cropping %}
+{% load django_bootstrap_breadcrumbs %}
+{# ======== #}
+
+{% block breadcrumbs %}
+    {{ block.super }}
+    {% breadcrumb "Теги" "blog:tag_list" %}
+{% endblock %}
+
+{% block title %}Список тегов блога{% endblock %}
+{% block h1 %}Список тегов блога{% endblock %}
+
+{% block tags %}<hr/>{% endblock %}
+
+{% block blog_content %}
+    <div class="page_content">
+        <div class="tagslist">
+        <ul>
+            {% for tag in tags %}
+                <li>
+                    <a href="{% url 'blog:tag_detail' tag.title %}">{{ tag.title }}</a> ({{ tag.posts.all|length }})
+                </li>
+            {% empty %}
+                <li>
+                    <p>К сожалению, ни одного тега ещё не добавлено.</p>
+                </li>
+            {% endfor %}
+        </ul>
+            {% if pages|length > 1 %}
+                <div class="navigation">
+                    {% for page in pages %}
+                        {% if page == active_page %}
+                            <span>{{ page }}</span>&nbsp;&nbsp;
+                        {% else %}
+                            <a href="{% url 'blog:tag_pagination' page %}">{{ page }}</a>&nbsp;&nbsp;
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% endif %}
+            <a href="{% url 'blog:post_list' %}">К списку статей</a>
+        </div>
+    </div>
+{% endblock %}
